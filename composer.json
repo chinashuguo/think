@@ -1,5 +1,5 @@
 {
-    "name": "topthink/think",
+    "name": "chinashuguo/think",
     "description": "the new thinkphp framework",
     "type": "project",
     "keywords": [
@@ -7,21 +7,39 @@
         "thinkphp",
         "ORM"
     ],
-    "homepage": "http://thinkphp.cn/",
+    "homepage": "http://chinashuguo.cn/",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "liu21st",
-            "email": "liu21st@gmail.com"
+            "name": "opensmarty",
+            "email": "opensmarty@163.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://gitee.com/chinashuguo/framework"
+        },
+        {
+            "type": "git",
+            "url": "https://gitee.com/chinashuguo/core"
+        },
+        {
+            "type": "git",
+            "url": "https://gitee.com/chinashuguo/api"
         }
     ],
     "require": {
         "php": ">=5.6.0",
-        "topthink/framework": "5.1.*"
+        "chinashuguo/framework": "5.1.x-dev",
+        "ircmaxell/random-lib": "^1.2",
+        "symfony/var-dumper": "^2.8",
+        "chinashuguo/core": "1.0.x-dev",
+        "chinashuguo/api": "1.0.x-dev"
     },
     "autoload": {
         "psr-4": {
-            "app\\": "application"
+            "shuguo\\": "application"
         }
     },
     "extra": {
